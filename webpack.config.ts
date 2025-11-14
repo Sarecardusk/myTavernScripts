@@ -405,6 +405,10 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                 selfDefending: true,
                 simplify: true,
                 splitStrings: true,
+<<<<<<< HEAD
+=======
+                seed: import.meta.dirname.length,
+>>>>>>> b9c87dff9e7c9759a42bbc5a0675396be82983ad
               }),
             ]
           : [],

@@ -250,14 +250,13 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
             },
             {
               test: /\.(sa|sc)ss$/,
-              use: ['postcss-loader', 'sass-loader'],
+              use: ['sass-loader'],
               resourceQuery: /raw/,
               type: 'asset/source',
               exclude: /node_modules/,
             },
             {
               test: /\.css$/,
-              use: ['postcss-loader'],
               resourceQuery: /raw/,
               type: 'asset/source',
               exclude: /node_modules/,
@@ -284,14 +283,13 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
             },
             {
               test: /\.(sa|sc)ss$/,
-              use: ['postcss-loader', 'sass-loader'],
+              use: ['sass-loader'],
               resourceQuery: /url/,
               type: 'asset/inline',
               exclude: /node_modules/,
             },
             {
               test: /\.css$/,
-              use: ['postcss-loader'],
               resourceQuery: /url/,
               type: 'asset/inline',
               exclude: /node_modules/,
@@ -353,7 +351,6 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       { loader: 'vue-style-loader', options: { ssrId: true } },
                       { loader: 'css-loader', options: { url: false } },
-                      'postcss-loader',
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
@@ -363,7 +360,6 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       { loader: 'vue-style-loader', options: { ssrId: true } },
                       { loader: 'css-loader', options: { url: false } },
-                      'postcss-loader',
                     ],
                     exclude: /node_modules/,
                   },
@@ -372,14 +368,13 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       'style-loader',
                       { loader: 'css-loader', options: { url: false } },
-                      'postcss-loader',
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
                   },
                   {
                     test: /\.css$/,
-                    use: ['style-loader', { loader: 'css-loader', options: { url: false } }, 'postcss-loader'],
+                    use: ['style-loader', { loader: 'css-loader', options: { url: false } }],
                     exclude: /node_modules/,
                   },
                 ] as any[])
@@ -389,18 +384,13 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       MiniCssExtractPlugin.loader,
                       { loader: 'css-loader', options: { url: false } },
-                      'postcss-loader',
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
                   },
                   {
                     test: /\.css$/,
-                    use: [
-                      MiniCssExtractPlugin.loader,
-                      { loader: 'css-loader', options: { url: false } },
-                      'postcss-loader',
-                    ],
+                    use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }],
                     exclude: /node_modules/,
                   },
                 ] as any[]),

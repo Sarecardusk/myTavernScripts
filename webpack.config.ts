@@ -250,13 +250,21 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
             },
             {
               test: /\.(sa|sc)ss$/,
+<<<<<<< HEAD
               use: ['sass-loader'],
+=======
+              use: ['postcss-loader', 'sass-loader'],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
               resourceQuery: /raw/,
               type: 'asset/source',
               exclude: /node_modules/,
             },
             {
               test: /\.css$/,
+<<<<<<< HEAD
+=======
+              use: ['postcss-loader'],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
               resourceQuery: /raw/,
               type: 'asset/source',
               exclude: /node_modules/,
@@ -283,13 +291,21 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
             },
             {
               test: /\.(sa|sc)ss$/,
+<<<<<<< HEAD
               use: ['sass-loader'],
+=======
+              use: ['postcss-loader', 'sass-loader'],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
               resourceQuery: /url/,
               type: 'asset/inline',
               exclude: /node_modules/,
             },
             {
               test: /\.css$/,
+<<<<<<< HEAD
+=======
+              use: ['postcss-loader'],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
               resourceQuery: /url/,
               type: 'asset/inline',
               exclude: /node_modules/,
@@ -351,6 +367,10 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       { loader: 'vue-style-loader', options: { ssrId: true } },
                       { loader: 'css-loader', options: { url: false } },
+<<<<<<< HEAD
+=======
+                      'postcss-loader',
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
@@ -360,6 +380,10 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       { loader: 'vue-style-loader', options: { ssrId: true } },
                       { loader: 'css-loader', options: { url: false } },
+<<<<<<< HEAD
+=======
+                      'postcss-loader',
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                     ],
                     exclude: /node_modules/,
                   },
@@ -368,13 +392,21 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       'style-loader',
                       { loader: 'css-loader', options: { url: false } },
+<<<<<<< HEAD
+=======
+                      'postcss-loader',
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
                   },
                   {
                     test: /\.css$/,
+<<<<<<< HEAD
                     use: ['style-loader', { loader: 'css-loader', options: { url: false } }],
+=======
+                    use: ['style-loader', { loader: 'css-loader', options: { url: false } }, 'postcss-loader'],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                     exclude: /node_modules/,
                   },
                 ] as any[])
@@ -384,13 +416,25 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                     use: [
                       MiniCssExtractPlugin.loader,
                       { loader: 'css-loader', options: { url: false } },
+<<<<<<< HEAD
+=======
+                      'postcss-loader',
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                       'sass-loader',
                     ],
                     exclude: /node_modules/,
                   },
                   {
                     test: /\.css$/,
+<<<<<<< HEAD
                     use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }],
+=======
+                    use: [
+                      MiniCssExtractPlugin.loader,
+                      { loader: 'css-loader', options: { url: false } },
+                      'postcss-loader',
+                    ],
+>>>>>>> 554b225f1325def871e7754811cd8f71ba9a8169
                     exclude: /node_modules/,
                   },
                 ] as any[]),

@@ -29,6 +29,15 @@ export default [
       'better-tailwindcss/enforce-consistent-line-wrapping': ['off', { preferSingleLine: true, printWidth: 120 }],
       'better-tailwindcss/no-unregistered-classes': ['off', { ignore: ['fa-*'] }],
     },
+<<<<<<< HEAD
+=======
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'tailwind.css',
+        tailwindConfig: 'tailwind.config.js',
+      },
+    },
+>>>>>>> ffcef6e22b372e2f3dcc1048bf50073234505d74
   },
   {
     languageOptions: {
@@ -71,5 +80,9 @@ export default [
     },
   },
   eslintConfigPrettier,
+<<<<<<< HEAD
   globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'webpack.config.ts']),
+=======
+  globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'postcss.config.js', 'webpack.config.ts']),
+>>>>>>> ffcef6e22b372e2f3dcc1048bf50073234505d74
 ];

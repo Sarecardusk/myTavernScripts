@@ -14,6 +14,10 @@
   ],
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+<<<<<<< HEAD
+=======
+    "@tailwindcss/postcss": "^4.3.3",
+>>>>>>> 86263ac33d811f0fc3d2e7860c0b19039a9f4515
     "@types/jquery": "^4.0.1",
     "@types/jqueryui": "^1.12.24",
     "@types/lodash": "^4.17.27",
@@ -23,6 +27,10 @@
     "@types/toastr": "^2.1.44",
     "@types/webpack": "^5.28.5",
     "@typescript-eslint/parser": "^8.72.1",
+<<<<<<< HEAD
+=======
+    "autoprefixer": "^10.6.2",
+>>>>>>> 86263ac33d811f0fc3d2e7860c0b19039a9f4515
     "chokidar": "^5.0.0",
     "css-loader": "^7.1.5",
     "eslint": "^10.13.0",
@@ -42,6 +50,14 @@
     "html-webpack-plugin": "^5.6.8",
     "javascript-obfuscator": "^5.9.0",
     "mini-css-extract-plugin": "^2.10.2",
+<<<<<<< HEAD
+=======
+    "postcss": "^8.5.32",
+    "postcss-cli": "^11.0.1",
+    "postcss-load-config": "^6.0.1",
+    "postcss-loader": "^8.2.1",
+    "postcss-minify": "^1.2.0",
+>>>>>>> 86263ac33d811f0fc3d2e7860c0b19039a9f4515
     "prettier": "^3.9.10",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
